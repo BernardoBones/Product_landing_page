@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body{
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#header{
+    display: flex;
+}
+
+#nav-bar{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(55, 55, 55);
+    overflow: hidden;
+}
+
+@media only screen and (max-width:600px){
+#nav-bar ul{
+        display: flex;
+}
+
+#nav-bar ul li{
+        padding: 1rem 2rem;
+}
+
+#nav-bar ul li a{
+        color: #333;
+        font-size: 1.2rem;
+}
+}
+
+#container{
+    max-width: 960px;
+    margin: 2rem auto 0;
+    overflow: hidden;
+}
+
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+
+@media (min-width:1200px){
+    body{
+        background-color: rgb(235, 235, 235);
+    }
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.4rem 1.5 rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgb(55, 55, 55);
+}
+
+.nav-link{
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.message-box{
+    margin: 1.5rem;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.message-box h1{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.message-box input{
+    display: block;
+    margin: auto;
+    width: 30%;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+#personalizacoes{
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#personalizacoes.personalizacao{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+#personalizacoes.personalizacao div{
+    padding: 1rem;
+    margin-left: 3rem;
+}
+
+#personalizacoes.personalizacao div h2{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#como_é_feita{
+    padding: 3rem;
+    margin: auto;
+    text-align: center;
+}
+
+#como_é_feita #video{
+    width: 600px;
+    height: 350px;
+}
+
+#precos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0.2rem;
+}
+
+.price-box{
+    border: solid #333 2px;
+    border-radius: 1.5px;
+    text-align: center;
+}
+
+.price-box:first-child{
+    margin-right: 1.0rem;
+}
+
+.price-box:last-child{
+    margin-left: 1.0rem;
+}
+
+.price-box h3{
+    background-color: #ddd;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.price-box h2{
+    padding: 1rem;
+}
+
+.price-box p{
+    padding: 0 4rem 1rem;
+}
+
+.price-box .btn{
+    display: inline-block;
+    margin: 1.5rem;
+}
+
+#main-footer{
+    background-color: #ccc;
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#main-footer div a{
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+#bb{
+    text-decoration: underline;
+    color: #333
+}
+
+/* tablet e celular */
+
+@media only screen and (max-width:800px){
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0.3rem;
+    }
+
+    #navbar ul li{
+        padding: 1rem 1rem;
+    }
+
+    #personalizacoes .personalizacao{
+        flex-direction: column;
+    }
+
+    #personalizacoes .personalizacao div{
+        padding: 1rem;
+        margin: 0.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #como_é_feita{
+        padding: 1rem;
+    }
+
+    #como_é_feita #video{
+        width: 80%;
+        height: 30%;
+    }
+
+    #precos{
+        flex-direction: column;
+    }
+
+    #precos .price-box{
+        margin: 1rem;
+    }
+
+    .price-box:first-child{
+        margin-right: 0;
+    }
+
+    .price-box:last-child{
+        margin-left: 0;
+    }
+
+    #main-footer{
+        padding: 2.5rem 0.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-footer .my_name{
+        margin: 1rem 0;
+    }
+}
+    
